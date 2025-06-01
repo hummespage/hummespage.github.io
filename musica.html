@@ -1,46 +1,18 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Teste Música</title>
-</head>
-<body style="text-align: center; padding-top: 100px; background: #111; color: white; font-family: monospace;">
+<script>
+  function toggleMusica() {
+    const musica = document.getElementById("musica");
 
-  <h1>🎵 Teste de Música 🎵</h1>
-  <p>Clique no botão abaixo para tocar ou pausar a música.</p>
+    musica.volume = 1.0; // Força volume máximo
+    musica.muted = false;
 
-  <audio id="musica">
-    <source src="https://cdn.pixabay.com/audio/2022/03/15/audio_73885a9b89.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
-
-  <button onclick="toggleMusica()" style="
-    padding: 10px 20px;
-    background: #222;
-    color: #0f0;
-    border: 2px solid #0f0;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 20px;
-  ">
-    ▶️ Música ON/OFF
-  </button>
-
-  <script>
-    function toggleMusica() {
-      const musica = document.getElementById("musica");
-      musica.volume = 0.4;
-
-      if (musica.paused) {
-        musica.play().catch(err => {
-          alert("Clique necessário para ativar o som.");
-        });
-      } else {
-        musica.pause();
-      }
+    if (musica.paused) {
+      musica.play().then(() => {
+        console.log("Som iniciado.");
+      }).catch(err => {
+        alert("Erro ao tentar tocar: " + err.message);
+      });
+    } else {
+      musica.pause();
     }
-  </script>
-
-</body>
-</html>
+  }
+</script>
