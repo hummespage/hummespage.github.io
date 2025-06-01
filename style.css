@@ -1,34 +1,67 @@
-body {
-  font-family: Arial, sans-serif;
+/* Importar fonte pixelada estilo retrô */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Reset geral */
+* {
   margin: 0;
   padding: 0;
-  background: linear-gradient(to bottom, #f0f8ff, #e0eafc);
-  color: #333;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Press Start 2P', monospace;
+  background: url('https://i.imgur.com/e7DQD7R.png') repeat-y center top;
+  background-color: #87ceeb;
+  color: #fff;
   text-align: center;
+  overflow-x: hidden;
 }
 
-header {
-  background-color: #004080;
-  color: white;
-  padding: 30px 20px;
+#game-wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+/* Cabeçalho com o nome do site */
+.topo {
+  background: #000;
+  padding: 40px 10px;
+  border-bottom: 4px solid #fff;
+}
+
+.titulo-site {
+  font-size: 22px;
+  color: #ffdd57;
+  text-shadow: 2px 2px #000;
+}
+
+/* Blocos de conteúdo como plataformas */
+.bloco {
+  background: rgba(0, 0, 0, 0.7);
+  border: 4px solid #fff;
+  margin: 60px auto;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #222;
+}
+
+h2 {
+  color: #ffcc00;
+  margin-bottom: 20px;
+  font-size: 14px;
 }
 
 p {
-  font-size: 1.2em;
+  font-size: 12px;
+  line-height: 1.6;
 }
 
-main {
-  padding: 40px 20px;
-}
-
-footer {
-  background-color: #222;
-  color: #ccc;
-  padding: 15px 10px;
-  margin-top: 50px;
+/* Rodapé */
+.rodape {
+  margin-top: 80px;
+  padding: 20px;
+  background: #222;
+  color: #aaa;
+  font-size: 10px;
 }
