@@ -1,4 +1,4 @@
-/* Fonte pixelada estilo retrô (Terraria) */
+/* Fonte pixelada estilo retrô */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 /* Reset padrão */
@@ -8,18 +8,19 @@
   box-sizing: border-box;
 }
 
-/* Corpo com fundo azul e nuvens pixeladas */
+/* Corpo com imagem de fundo pixelada */
 body {
   font-family: 'Press Start 2P', monospace;
-  background: url('assets/fundo-castelo.png') no-repeat center top;
+  background-image: url('assets/fundo-castelo.png');
+  background-repeat: no-repeat;
   background-size: cover;
-  background-color: #87ceeb;
+  background-attachment: fixed;
+  background-position: center top;
   color: #fff;
   text-align: center;
-  overflow-x: hidden;
   min-height: 100vh;
+  overflow-x: hidden;
 }
-
 
 #game-wrapper {
   max-width: 800px;
@@ -29,7 +30,7 @@ body {
 
 /* Cabeçalho com nome do site */
 .topo {
-  background: #000;
+  background: rgba(0, 0, 0, 0.6);
   padding: 40px 10px;
   border-bottom: 4px solid #fff;
 }
@@ -40,7 +41,7 @@ body {
   text-shadow: 2px 2px #000;
 }
 
-/* Blocos de conteúdo simulando plataformas */
+/* Blocos de conteúdo */
 .bloco {
   background: rgba(0, 0, 0, 0.7);
   border: 4px solid #fff;
@@ -66,7 +67,7 @@ p {
 .rodape {
   margin-top: 80px;
   padding: 20px;
-  background: #222;
+  background: rgba(0, 0, 0, 0.6);
   color: #aaa;
   font-size: 10px;
 }
