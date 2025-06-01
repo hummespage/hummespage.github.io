@@ -11,13 +11,15 @@
 /* Corpo com fundo azul e nuvens pixeladas */
 body {
   font-family: 'Press Start 2P', monospace;
-  background: url('https://www.transparenttextures.com/patterns/clouds.png') repeat-y center top;
+  background: url('assets/fundo-castelo.png') no-repeat center top;
+  background-size: cover;
   background-color: #87ceeb;
   color: #fff;
   text-align: center;
   overflow-x: hidden;
   min-height: 100vh;
 }
+
 
 #game-wrapper {
   max-width: 800px;
