@@ -1,4 +1,4 @@
-/* Definir a fonte do corpo como uma fonte pixelada */
+/* Garante que o body tenha a altura completa da página */
 body {
   margin: 0;
   padding: 0;
@@ -9,6 +9,17 @@ body {
   height: 100%;
   overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
+  background-image: 
+    url('assets/fundo_site_parte_1.png'),
+    url('assets/fundo_site_parte_2.png'),
+    url('assets/fundo_site_parte_2.png'), /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_2.png'), /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_3.png'); /* Imagem 3 */
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: top center; /* Posiciona as imagens corretamente */
+  background-attachment: scroll; /* Ajusta a rolagem das imagens */
+  height: auto;
+  min-height: 100vh; /* Garante que a altura da página ocupe pelo menos a altura total da tela */
 }
 
 /* Estilo para as imagens de fundo */
@@ -36,10 +47,15 @@ body {
   margin-top: 150px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
 }
 
-/* Estilo do logo */
+/* Estilo do logotipo */
 .logo {
-  width: 200px;
+  width: 300px; /* Ajuste do tamanho do logotipo */
   margin-bottom: 40px;
+  transition: width 0.3s; /* Adicionando transição suave ao logotipo */
+}
+
+.logo:hover {
+  width: 320px; /* Tamanho maior quando o logotipo for hover */
 }
 
 /* Estilo das seções */
@@ -63,16 +79,25 @@ body {
   line-height: 1.6; /* Garante melhor leitura entre as linhas */
 }
 
-/* Imagens de fundo no CSS */
-body {
-  background-image: 
-    url('assets/fundo_site_parte_1.png'),
-    url('assets/fundo_site_parte_2.png'),
-    url('assets/fundo_site_parte_2.png'), /* Repetindo a imagem 2 */
-    url('assets/fundo_site_parte_2.png'), /* Repetindo a imagem 2 */
-    url('assets/fundo_site_parte_3.png'); /* Imagem 3 */
-  background-size: cover; /* Garante que a imagem cubra toda a tela */
-  background-position: top center; /* Posiciona as imagens corretamente */
-  background-attachment: scroll; /* Ajusta a rolagem das imagens */
-  height: auto;
+/* Estilo para a barra de rolagem */
+html, body {
+  height: 100%; /* Garantir que o body ocupe toda a altura da página */
+}
+
+/* Para melhorar a visualização na barra de rolagem */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
