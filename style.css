@@ -1,8 +1,8 @@
-/* Garante que o body tenha a altura completa da página */
+/* Definir a fonte do corpo como uma fonte pixelada */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Press Start 2P', cursive; /* Fonte pixelada */
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -11,7 +11,7 @@ body {
   text-align: center;
 }
 
-/* Estilo para cada imagem de fundo, uma embaixo da outra */
+/* Estilo para as imagens de fundo */
 .fundo-img {
   width: 100%;
   height: 100vh; /* Cada imagem ocupa a altura da tela */
@@ -33,7 +33,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 100px; /* Espaço para o conteúdo */
+  margin-top: 100px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
 }
 
 /* Estilo do logo */
@@ -44,7 +44,7 @@ body {
 
 /* Estilo das seções */
 .sobre, .projetos {
-  margin: 20px 0;
+  margin: 30px 0; /* Espaçamento entre as seções */
 }
 
 /* Títulos das seções */
@@ -56,14 +56,19 @@ body {
 /* Texto das seções */
 .sobre p, .projetos p {
   font-size: 1.2rem;
+  line-height: 1.6; /* Garante melhor leitura entre as linhas */
 }
 
 /* Imagens de fundo no CSS */
 body {
-  background-image: url('assets/fundo_site_parte_1.png'),
-                    url('assets/fundo_site_parte_2.png'),
-                    url('assets/fundo_site_parte_3.png');
+  background-image: 
+    url('assets/fundo_site_parte_1.png'),
+    url('assets/fundo_site_parte_2.png'),
+    url('assets/fundo_site_parte_2.png'), /* Repetindo a imagem 2 */
+    url('assets/fundo_site_parte_2.png'), /* Repetindo a imagem 2 */
+    url('assets/fundo_site_parte_3.png'); /* Imagem 3 */
   background-size: cover; /* Garante que a imagem cubra toda a tela */
   background-position: top center; /* Posiciona as imagens corretamente */
-  background-attachment: fixed; /* Faz o fundo fixar na tela */
+  background-attachment: scroll; /* Ajusta a rolagem das imagens */
+  height: auto;
 }
