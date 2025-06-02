@@ -5,42 +5,43 @@
 }
 
 html, body {
-  width: 100%;
   height: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
-  background-color: black;
 }
 
+/* Cada seção ocupa toda a tela e tem fundo individual */
 .bloco {
-  position: relative;
-  width: 100%;
   height: 100vh;
-  overflow: hidden;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white;
+  padding: 2rem;
 }
 
-.fundo-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
+/* Fundos com background-image direto no CSS */
+.bloco1 {
+  background-image: url('assets/fundo_site_parte_1.png');
+}
+.bloco2 {
+  background-image: url('assets/fundo_site_parte_2.png');
+}
+.bloco3 {
+  background-image: url('assets/fundo_site_parte_3.png');
 }
 
 .conteudo {
-  position: relative;
-  z-index: 1;
-  color: white;
-  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
   padding: 2rem;
-  max-width: 800px;
-  margin: 0 auto;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
+  max-width: 800px;
 }
 
 .logo {
