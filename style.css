@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Press Start 2P', cursive; /* Fonte pixelada */
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -12,8 +12,8 @@ body {
   background-image: 
     url('assets/fundo_site_parte_1.png'),  /* Imagem 1 */
     url('assets/fundo_site_parte_2.png'),  /* Imagem 2 */
-    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 repetida */
-    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 */
+    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 */
     url('assets/fundo_site_parte_3.png');  /* Imagem 3 */
   background-size: cover; /* Garante que a imagem cubra toda a tela */
   background-position: top center; /* Posiciona as imagens corretamente */
@@ -34,7 +34,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 150px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
+  margin-top: 150px; /* Espaço para o conteúdo */
 }
 
 /* Estilo do logo */
@@ -45,7 +45,7 @@ body {
 
 /* Estilo das seções */
 .sobre, .projetos, .experiencia-profissional, .formacao-academica, .cursos-aperfeicoamento, .conhecimentos-plataformas {
-  margin: 20px 0;
+  margin: 30px 0; /* Espaçamento entre as seções */
 }
 
 /* Títulos das seções */
