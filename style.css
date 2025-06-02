@@ -16,17 +16,18 @@ html, body {
 }
 
 .bloco {
-  min-height: 100vh; /* permite que a altura se expanda com o conteúdo */
+  min-height: 100vh;
   width: 100%;
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed; /* ajuda a manter a imagem estática */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   position: relative;
-  padding: 2rem;
+  padding: 3rem 1rem;
 }
 
 .bloco1 {
@@ -45,31 +46,31 @@ html, body {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 12px;
-  max-width: 1000px;
-  width: 100%;
+  max-width: 700px; /* DIMINUI A LARGURA */
+  width: 90%;
   z-index: 1;
+  overflow-wrap: break-word;
 }
 
 .logo {
-  max-width: 200px;
-  margin-bottom: 1rem;
+  max-width: 180px;
+  margin-bottom: 1.5rem;
 }
 
-/* Espaçamento extra opcional para formação, se necessário */
 .formacao {
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 ul {
   text-align: left;
   margin-top: 1rem;
-  margin-left: 2rem;
+  margin-left: 1.5rem;
   font-size: 10px;
 }
 
 ul li {
   margin-bottom: 0.8rem;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 h1, h2, h3 {
