@@ -8,8 +8,9 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh; /* altura da tela */
-  background-color: #f4f4f4;
-  background-image: url('assets/fundo.png'); /* Altere para o nome correto da sua imagem */
+  background-image: url('assets/fundo_site_parte_1.png'), 
+                    url('assets/fundo_site_parte_2.png'), 
+                    url('assets/fundo_site_parte_3.png'); /* Altere para os nomes corretos das suas imagens */
   background-size: cover;
   background-position: center;
 }
