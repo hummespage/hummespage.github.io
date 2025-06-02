@@ -6,34 +6,92 @@
   <title>Hummes Page</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    section.bloco {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    html, body {
+      height: 100%;
+      font-family: Arial, sans-serif;
+      scroll-behavior: smooth;
+      background-color: black;
+      color: white;
+    }
+
+    .bloco {
+      min-height: 100vh;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding-top: 6vh;
+      padding-bottom: 6vh;
+      position: relative;
+    }
+
+    .bloco1 {
+      background-image: url('assets/fundo_site_parte_1.png');
+    }
+    .bloco3 {
+      background-image: url('assets/fundo_site_parte_3.png');
+    }
+
     .conteudo {
-      margin: auto;
-      max-width: 900px;
+      background-color: rgba(0, 0, 0, 0.6);
       padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.5);
-      border-radius: 10px;
-      margin-top: 4rem;
-    }
-    .conteudo ul {
-      padding-left: 1.2rem;
-    }
-    .conteudo h2 {
+      border-radius: 12px;
+      max-width: 900px;
+      color: white;
       margin-top: 2rem;
+      text-align: center;
     }
-    .conteudo h3 {
-      margin-top: 1.5rem;
-    }
-    .conteudo p, .conteudo li {
-      margin-top: 0.5rem;
-    }
+
     .logo {
       max-width: 200px;
       display: block;
-      margin: 0 auto 1rem auto;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    .botoes-navegacao {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    .botoes-navegacao a {
+      background-color: #222;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s;
+      font-weight: bold;
+    }
+
+    .botoes-navegacao a:hover {
+      background-color: #555;
+    }
+
+    h1, h2, h3 {
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p, li {
+      margin-top: 0.5rem;
+      line-height: 1.6;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
     }
   </style>
 </head>
@@ -45,137 +103,25 @@
       <img src="assets/hummes-logo.png" alt="Logo Hummes" class="logo" />
       <h1>Sobre Mim</h1>
       <p>
-        Sou Samuel Hummes Schuler, desenvolvedor apaixonado por tecnologia desde 1998. 
-        Tenho formação técnica em Mecânica Industrial e Soldagem, além de estar cursando Arquitetura e Urbanismo. 
-        Atuei por anos como projetista em arquitetura e, mais tarde, fui proprietário de um bar, onde liderei equipes, gerenciei custos e promovi experiências completas para os clientes. 
-        Em paralelo, mantive sempre viva minha conexão com a programação, com foco em Python e desenvolvimento de jogos e sistemas. 
-        Hoje, busco uma oportunidade como desenvolvedor remoto, onde eu possa aplicar minha bagagem técnica, visão criativa e capacidade de liderança.
+        Sou Samuel Hummes Schuler, desenvolvedor apaixonado por tecnologia desde 1998. Tenho formação técnica em Mecânica Industrial e Soldagem, além de estar cursando Arquitetura e Urbanismo. Atuei por anos como projetista em arquitetura e, mais tarde, fui proprietário de um bar, onde liderei equipes, gerenciei custos e promovi experiências completas para os clientes. Em paralelo, mantive sempre viva minha conexão com a programação, com foco em Python e desenvolvimento de jogos e sistemas. Hoje, busco uma oportunidade como desenvolvedor remoto, onde eu possa aplicar minha bagagem técnica, visão criativa e capacidade de liderança.
       </p>
-    </div>
-  </section>
 
-  <!-- EXPERIÊNCIA PROFISSIONAL -->
-  <section class="bloco bloco2">
-    <div class="conteudo">
-      <h2>Experiência Profissional</h2>
-
-      <h3>Administrador — Semmuh, Garopaba/SC</h3>
-      <p><strong>Dezembro de 2016 – Dezembro de 2019</strong></p>
-      <ul>
-        <li>Monitoramento de despesas e receitas, garantindo o controle financeiro da operação.</li>
-        <li>Elaboração de relatórios gerenciais e análise de dados para apoio à tomada de decisão.</li>
-        <li>Gestão de custos e lucratividade com foco em crescimento estratégico.</li>
-      </ul>
-
-      <h3>Proprietário — Casa da Esquina, Montenegro/RS</h3>
-      <p><strong>Janeiro de 2010 – Janeiro de 2016</strong></p>
-      <ul>
-        <li>Gestão completa do bar: atendimento ao cliente, controle de estoque, caixa e fornecedores.</li>
-        <li>Coordenação e treinamento de equipe, supervisão de todas as áreas de operação.</li>
-        <li>Elaboração de cardápios, eventos promocionais e estratégias de fidelização de clientes.</li>
-      </ul>
-
-      <h3>Projetista de Arquitetura — Schuler Eng. Cia Ltda, Montenegro/RS</h3>
-      <p><strong>Março de 2012 – Março de 2016</strong></p>
-      <ul>
-        <li>Desenvolvimento de projetos arquitetônicos: plantas, cortes, fachadas e apresentações para clientes.</li>
-        <li>Supervisão de obras, criação de soluções sustentáveis e aplicação de normas técnicas.</li>
-        <li>Participação em projetos de inclusão, ergonomia e revitalização urbana.</li>
-      </ul>
-
-      <h3>Projetista de Arquitetura — Decora por Hora, Porto Alegre/RS</h3>
-      <p><strong>Março de 2012 – Março de 2014</strong></p>
-      <ul>
-        <li>Desenvolvimento de projetos arquitetônicos e relatórios técnicos.</li>
-        <li>Supervisão de obras e elaboração de plantas acessíveis e funcionais.</li>
-      </ul>
-
-      <h3>Projetista de Arquitetura — Prefeitura Municipal, Montenegro/RS</h3>
-      <p><strong>Julho de 2011 – Julho de 2013</strong></p>
-      <ul>
-        <li>Criação e revisão de projetos técnicos em parceria com arquitetos e engenheiros.</li>
-        <li>Supervisão de obras públicas e adaptação de edificações às normas técnicas.</li>
-      </ul>
-
-      <h3>Projetista de Móveis — Armarius Design, Montenegro/RS</h3>
-      <p><strong>Julho de 2009 – Julho de 2011</strong></p>
-      <ul>
-        <li>Criação de móveis planejados em 3D, visitas técnicas e acompanhamento de pós-venda.</li>
-        <li>Garantia da qualidade do produto e atendimento ao cliente final.</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- FORMAÇÃO E CURSOS -->
-  <section class="bloco bloco2">
-    <div class="conteudo">
-      <h2>Formação Acadêmica</h2>
-
-      <h3>Arquitetura e Urbanismo</h3>
-      <p>UNISINOS, São Leopoldo/RS – <strong>Março de 2020 – Atual</strong></p>
-
-      <h3>Tecnólogo em Mecânica Industrial</h3>
-      <p>SINODAL, Montenegro – <strong>Jan/2006 – Dez/2010</strong> – Concluído</p>
-
-      <h3>Soldagem Industrial</h3>
-      <p>SENAI, Montenegro – <strong>Jan/2010 – Jan/2011</strong> – Concluído</p>
-
-      <h3>Ensino Médio</h3>
-      <p>Colégio Científico, Montenegro – <strong>Dezembro de 2003</strong> – Concluído</p>
-
-      <h2 style="margin-top: 2rem;">Cursos de Aperfeiçoamento</h2>
-      <ul>
-        <li><strong>Python (240h)</strong> – FreeCodeCamp, 2022</li>
-        <li><strong>Rust – Automação e DevOps (40h)</strong> – Alura, 2021</li>
-        <li><strong>Kotlin e Swift – Desenvolvimento Mobile (40h)</strong> – edX, 2020</li>
-        <li><strong>PHP, TypeScript, Ruby – Desenvolvimento Web (80h)</strong> – Alura, 2020</li>
-        <li><strong>C++ (120h)</strong> – edX, 2019</li>
-        <li><strong>Java (120h)</strong> – Udemy, 2018</li>
-        <li><strong>Python</strong> – Alura, 2018</li>
-        <li><strong>HTML (80h)</strong> – Curso em Vídeo, 2016</li>
-        <li><strong>Python (160h)</strong> – Curso em Vídeo, 2016</li>
-        <li><strong>HTML</strong> – Styllus Informática, 2005</li>
-        <li><strong>Arquitetura Hospitalar (120h)</strong> – Unisinos, 2014</li>
-        <li><strong>AutoCAD (180h)</strong> – UFRGS, 2014</li>
-        <li><strong>SketchUp (80h)</strong> – Unisinos, 2016</li>
-        <li><strong>Renderização 3D e Modelagem SketchUp</strong> – Unisinos, 2016</li>
-      </ul>
-
-      <h2 style="margin-top: 2rem;">Conhecimentos em Plataformas</h2>
-      <ul>
-        <li><strong>SQL</strong> – Administração de bancos de dados relacionais</li>
-        <li><strong>MATLAB</strong> – Programação e análise numérica</li>
-        <li><strong>Haskell</strong> – Programação funcional</li>
-        <li><strong>Scala</strong> – Programação funcional e orientada a objetos</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section class="bloco bloco2">
-    <div class="conteudo">
-      <h2>Projetos</h2>
-      <p>
-        Aqui você encontra alguns dos meus projetos mais recentes envolvendo jogos 2D em Python com Pygame, animações, experimentos visuais e aplicações web. 
-        Estou sempre desenvolvendo algo novo para aprender e evoluir como programador.
-      </p>
+      <div class="botoes-navegacao">
+        <a href="experiencia.html">Experiência Profissional</a>
+        <a href="formacao.html">Formação & Cursos</a>
+        <a href="projetos.html">Projetos</a>
+      </div>
     </div>
   </section>
 
   <!-- CONTATO -->
-  <section class="bloco bloco2">
+  <section class="bloco bloco3">
     <div class="conteudo">
       <h2>Contato</h2>
       <p>Entre em contato pelo e-mail: <strong>samuel.schuler2@gmail.com</strong><br>
          ou pelo WhatsApp: <strong>+55 51 99744-5149</strong>.
       </p>
-    </div>
-  </section>
-
-  <!-- RODAPÉ -->
-  <section class="bloco bloco3">
-    <div class="conteudo">
-      <p>Obrigado por visitar! Hummes Page © 2025</p>
+      <p style="margin-top: 2rem;">Obrigado por visitar! Hummes Page © 2025</p>
     </div>
   </section>
 
