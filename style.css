@@ -33,7 +33,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 100px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
+  margin-top: 150px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
 }
 
 /* Estilo do logo */
@@ -43,18 +43,22 @@ body {
 }
 
 /* Estilo das seções */
-.sobre, .projetos {
+.sobre, .projetos, .experiencia-profissional, .formacao-academica, .cursos-aperfeicoamento, .conhecimentos-plataformas {
   margin: 30px 0; /* Espaçamento entre as seções */
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o texto */
+  border-radius: 10px;
 }
 
 /* Títulos das seções */
-.sobre h1, .projetos h2 {
+.sobre h1, .projetos h2, .experiencia-profissional h1, .formacao-academica h1, .cursos-aperfeicoamento h1, .conhecimentos-plataformas h1 {
   font-size: 2rem;
   margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
 }
 
 /* Texto das seções */
-.sobre p, .projetos p {
+.sobre p, .projetos p, .experiencia-profissional p, .formacao-academica p, .cursos-aperfeicoamento p, .conhecimentos-plataformas p {
   font-size: 1.2rem;
   line-height: 1.6; /* Garante melhor leitura entre as linhas */
 }
