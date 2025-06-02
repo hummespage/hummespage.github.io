@@ -4,8 +4,9 @@
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   width: 100%;
+  height: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
   background-color: black;
@@ -22,8 +23,8 @@ body, html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
+  width: 100%;
   object-fit: cover;
   z-index: -1;
 }
@@ -34,11 +35,11 @@ body, html {
   color: white;
   text-align: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.6);
   max-width: 800px;
   margin: 0 auto;
   top: 50%;
   transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
   border-radius: 12px;
 }
 
