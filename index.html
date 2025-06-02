@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hummes Page</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Site</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="scroll-container">
-    <!-- Imagens de fundo -->
-    <img src="assets/fundo_site_parte_1.png" class="fundo-img" alt="Fundo 1" />
-    <img src="assets/fundo_site_parte_2.png" class="fundo-img" alt="Fundo 2" />
-    <img src="assets/fundo_site_parte_3.png" class="fundo-img" alt="Fundo 3" />
+  <div class="container">
+    <!-- Cabeçalho com logo -->
+    <header>
+      <img id="logo" src="assets/logo.png" alt="Logo">
+    </header>
 
-    <!-- Conteúdo centralizado -->
-    <div class="conteudo-site">
-      <img src="assets/hummes-logo.png" alt="Logo" class="logo" />
+    <!-- Seção "Sobre Mim" -->
+    <section id="sobre-mim">
+      <h1>Sobre Mim</h1>
+      <p>Olá! Eu sou Samuel Schuler, um entusiasta de programação, e estou começando minha jornada na área de desenvolvimento web. Com uma experiência em arquitetura e negócios, busco uma oportunidade remota para aplicar minhas habilidades.</p>
+    </section>
 
-      <section class="sobre">
-        <h1>Sobre Mim</h1>
-        <p>Olá! Meu nome é Hummes, nasci em 1985. Este é meu portfólio com projetos em Python e desenvolvimento de jogos.</p>
-      </section>
+    <!-- Seção "Projetos" -->
+    <section id="projetos">
+      <h1>Projetos</h1>
+      <p>Esses são alguns dos projetos que desenvolvi enquanto aprendi a programar:</p>
+      <ul>
+        <li>Projeto 1 - Aplicativo de Controle de Tarefas</li>
+        <li>Projeto 2 - Site Responsivo de Portfólio</li>
+        <li>Projeto 3 - Jogo em Python (Pygame)</li>
+      </ul>
+    </section>
 
-      <section class="projetos">
-        <h2>Projetos</h2>
-        <p>Aqui você poderá acessar meus jogos, animações e códigos criativos criados em Python.</p>
-      </section>
-    </div>
+    <!-- Seção "Contato" -->
+    <section id="contato">
+      <h1>Contato</h1>
+      <p>Entre em contato comigo por e-mail: <a href="mailto:samuel@example.com">samuel@example.com</a></p>
+    </section>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
