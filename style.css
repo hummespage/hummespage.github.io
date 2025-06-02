@@ -9,6 +9,9 @@ body {
   justify-content: center;
   height: 100vh; /* altura da tela */
   background-color: #f4f4f4;
+  background-image: url('assets/fundo.png'); /* Altere para o nome correto da sua imagem */
+  background-size: cover;
+  background-position: center;
 }
 
 /* Centralizando o conteúdo */
@@ -40,3 +43,17 @@ body {
   margin-bottom: 20px;
 }
 
+/* Seção de Contato */
+#contato {
+  width: 100%;
+  margin: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  color: #0056b3;
+}
