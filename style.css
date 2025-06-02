@@ -57,3 +57,13 @@ body {
 .sobre p, .projetos p {
   font-size: 1.2rem;
 }
+
+/* Imagens de fundo no CSS */
+body {
+  background-image: url('assets/fundo_site_parte_1.png'),
+                    url('assets/fundo_site_parte_2.png'),
+                    url('assets/fundo_site_parte_3.png');
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: top center; /* Posiciona as imagens corretamente */
+  background-attachment: fixed; /* Faz o fundo fixar na tela */
+}
