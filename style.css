@@ -2,7 +2,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Press Start 2P', cursive; /* Fonte pixelada */
+  font-family: Arial, sans-serif;
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
@@ -11,18 +11,13 @@ body {
   text-align: center;
 }
 
-/* Container para as imagens de fundo */
-.fundo-container {
-  position: relative;
-  z-index: -1; /* Garante que as imagens fiquem atrás do conteúdo */
-}
-
-/* Estilo para as imagens de fundo */
+/* Estilo para cada imagem de fundo, uma embaixo da outra */
 .fundo-img {
   width: 100%;
   height: 100vh; /* Cada imagem ocupa a altura da tela */
   object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
   position: relative;
+  z-index: -1; /* Coloca as imagens atrás do conteúdo */
 }
 
 /* Estilo do conteúdo da página */
@@ -38,55 +33,37 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 100px; /* Espaço para o conteúdo (ajustado para não ficar colado nas imagens) */
+  margin-top: 100px; /* Espaço para o conteúdo */
 }
 
-/* Estilo do logotipo */
+/* Estilo do logo */
 .logo {
-  width: 300px; /* Ajuste do tamanho do logotipo */
+  width: 200px;
   margin-bottom: 40px;
-  transition: width 0.3s; /* Adicionando transição suave ao logotipo */
-}
-
-.logo:hover {
-  width: 320px; /* Tamanho maior quando o logotipo for hover */
 }
 
 /* Estilo das seções */
-.sobre, .projetos, .experiencia-profissional, .formacao-academica, .cursos-aperfeicoamento, .conhecimentos-plataformas {
-  margin: 30px 0; /* Espaçamento entre as seções */
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para destacar o texto */
-  border-radius: 10px;
+.sobre, .projetos {
+  margin: 20px 0;
 }
 
 /* Títulos das seções */
-.sobre h1, .projetos h2, .experiencia-profissional h1, .formacao-academica h1, .cursos-aperfeicoamento h1, .conhecimentos-plataformas h1 {
+.sobre h1, .projetos h2 {
   font-size: 2rem;
   margin-bottom: 10px;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para o texto */
 }
 
 /* Texto das seções */
-.sobre p, .projetos p, .experiencia-profissional p, .formacao-academica p, .cursos-aperfeicoamento p, .conhecimentos-plataformas p {
+.sobre p, .projetos p {
   font-size: 1.2rem;
-  line-height: 1.6; /* Garante melhor leitura entre as linhas */
 }
 
-/* Barra de rolagem */
-body::-webkit-scrollbar {
-  width: 10px;
-}
-
-body::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-body::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
+/* Imagens de fundo no CSS */
+body {
+  background-image: url('assets/fundo_site_parte_1.png'),
+                    url('assets/fundo_site_parte_2.png'),
+                    url('assets/fundo_site_parte_3.png');
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: top center; /* Posiciona as imagens corretamente */
+  background-attachment: fixed; /* Faz o fundo fixar na tela */
 }
