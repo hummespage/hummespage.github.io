@@ -2,61 +2,63 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Hummes Page</title>
-  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <section class="bloco bloco1">
-    <div class="conteudo" style="margin-top: 80px;">
-      <img src="assets/hummes-logo.png" alt="Hummes Page Logo" class="logo"/>
+  <!-- Bloco 1 - Introdução -->
+  <div class="bloco bloco1">
+    <div class="conteudo">
+      <img src="assets/hummes-logo.png" alt="Hummes Page Logo" class="logo" />
       <h1>Sobre Mim</h1>
-      <p>Olá! Meu nome é Samuel Hummes Schuler. Sou apaixonado por desenvolvimento de sistemas e programação desde 1998. Após experiências nas áreas de mecânica, arquitetura e empreendedorismo, decidi focar na tecnologia. Hoje busco oportunidades em desenvolvimento, com especialização em Python e visão ampla de soluções digitais.</p>
+      <p>Olá! Meu nome é Samuel Hummes Schuler. Desde 1998 sou apaixonado por programação e tecnologia. Ao longo da minha vida profissional, atuei como projetista de arquitetura, administrador de bar e café, e atualmente estou focado em desenvolvimento de sistemas com ênfase em Python. Sou criativo, autodidata, e busco crescer na área de tecnologia unindo experiência, lógica e visão estratégica.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="bloco bloco2">
-    <div class="conteudo" style="margin-top: 100px;">
+  <!-- Bloco 2 - Experiência Profissional -->
+  <div class="bloco bloco2">
+    <div class="conteudo" style="margin-top: 60px;">
       <h2>Experiência Profissional</h2>
-      <p>Atuei como projetista na arquitetura entre 2009 e 2016, em empresas privadas e no setor público. Em seguida, empreendi como proprietário de bar e café até 2019, coordenando operações, equipes e estratégias de negócio. De 2020 em diante, foquei no estudo e prática de desenvolvimento de sistemas, buscando unir minha bagagem prática com tecnologia de ponta.</p>
+      <p><strong>Administrador – Semmuh, Garopaba (2016–2019)</strong><br>Gestão financeira, relatórios estratégicos, controle de despesas e análise de lucratividade.</p>
+      <p><strong>Proprietário – Casa da Esquina, Montenegro (2010–2016)</strong><br>Gestão completa de bar/café, controle de equipe, atendimento ao cliente, estoque, eventos e marketing.</p>
+      <p><strong>Projetista de Arquitetura – Schuler Eng. Cia., Decora por Hora, Prefeitura de Montenegro (2009–2016)</strong><br>Desenvolvimento de projetos técnicos, plantas, obras públicas e privadas, modelagem e AutoCAD.</p>
     </div>
-  </section>
+  </div>
 
-  <section class="bloco bloco3">
-    <div class="conteudo" style="margin-top: 120px;">
+  <!-- Bloco 3 - Formação Acadêmica e Cursos -->
+  <div class="bloco bloco3">
+    <div class="conteudo" style="margin-top: 60px;">
       <h2>Formação Acadêmica</h2>
-      <p>
-        <strong>Arquitetura e Urbanismo</strong> – UNISINOS (2020 – atual)<br/>
-        <strong>Tecnólogo em Mecânica Industrial</strong> – SINODAL (2006 – 2010)<br/>
-        <strong>Soldagem Industrial</strong> – SENAI (2010 – 2011)<br/>
-        <strong>Ensino Médio</strong> – Colégio Científico (2003)
-      </p>
+      <p><strong>Arquitetura e Urbanismo</strong> – UNISINOS, 2020–Atual</p>
+      <p><strong>Tecnólogo em Mecânica Industrial</strong> – SINODAL, 2006–2010</p>
+      <p><strong>Soldagem Industrial</strong> – SENAI, 2010–2011</p>
+      <p><strong>Ensino Médio</strong> – Colégio Científico, 2003</p>
 
       <h2 style="margin-top: 2rem;">Cursos de Aperfeiçoamento</h2>
       <ul>
-        <li>Python (FreeCodeCamp, Alura, Curso em Vídeo)</li>
-        <li>HTML, PHP, TypeScript, Ruby (Alura, Curso em Vídeo)</li>
-        <li>Java, C++, Rust, Kotlin, Swift (Udemy, edX)</li>
-        <li>AutoCAD, SketchUp, Arquitetura Hospitalar (UFRGS, Unisinos)</li>
+        <li>Python (240h) – FreeCodeCamp, 2022</li>
+        <li>Rust/DevOps (40h) – Alura, 2021</li>
+        <li>PHP, TypeScript, Ruby – Alura, 2020</li>
+        <li>Python (Curso em Vídeo, Alura) – 2016 a 2018</li>
+        <li>Java (120h) – Udemy, 2018</li>
+        <li>C++ (120h) – edX, 2019</li>
+        <li>Kotlin/Swift – edX, 2020</li>
+        <li>AutoCAD, SketchUp, Renderização 3D – UFRGS/Unisinos</li>
       </ul>
 
-      <h2 style="margin-top: 2rem;">Plataformas e Tecnologias</h2>
+      <h2 style="margin-top: 2rem;">Plataformas e Linguagens</h2>
       <ul>
-        <li>SQL, MATLAB, Haskell, Scala</li>
-        <li>Experiência com lógica de programação, bancos de dados e ferramentas modernas de desenvolvimento</li>
+        <li>SQL • MATLAB • Haskell • Scala</li>
       </ul>
     </div>
-  </section>
+  </div>
 
-  <section class="bloco bloco3">
-    <div class="conteudo" style="margin-top: auto; margin-bottom: 60px;">
-      <h2>Contato</h2>
-      <p>Email: samuel.schuler2@gmail.com</p>
-      <p>Telefone: (51) 99744-5149</p>
-      <p>Garopaba, SC – Brasil</p>
-    </div>
-  </section>
+  <!-- Rodapé com Contato -->
+  <footer style="padding: 2rem; background-color: #000; text-align: center;">
+    <p style="font-size: 10px;">Entre em contato: <br>📧 samuel.schuler2@gmail.com<br>📞 +55 51 99744-5149</p>
+  </footer>
 
 </body>
 </html>
