@@ -8,6 +8,7 @@ body, html {
   width: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
 .bloco {
@@ -23,7 +24,7 @@ body, html {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Garante que a imagem preencha o fundo sem cortar */
+  object-fit: cover;
   z-index: -1;
 }
 
@@ -33,7 +34,7 @@ body, html {
   color: white;
   text-align: center;
   padding: 2rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   max-width: 800px;
   margin: 0 auto;
   top: 50%;
