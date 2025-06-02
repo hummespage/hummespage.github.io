@@ -3,58 +3,61 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 100vh; /* altura da tela */
-  background-image: url('assets/fundo_site_parte_1.png'), 
-                    url('assets/fundo_site_parte_2.png'), 
-                    url('assets/fundo_site_parte_3.png'); /* Altere para os nomes corretos das suas imagens */
-  background-size: cover;
-  background-position: center;
-}
-
-/* Centralizando o conteúdo */
-.container {
-  display: flex;
+  overflow: hidden; /* Impede rolagem, se necessário */
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  width: 80%;
+}
+
+/* Contêiner principal para o conteúdo */
+.scroll-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo das imagens de fundo */
+.fundo-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta as imagens para cobrir a tela */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Coloca as imagens no fundo */
+}
+
+/* Estilo do conteúdo centralizado */
+.conteudo-site {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique acima das imagens */
   max-width: 1200px;
-}
-
-/* Ajustes para a seção Sobre mim */
-#sobre-mim {
-  width: 100%;
-  margin: 20px 0;
-}
-
-/* Ajustes para a seção Projetos */
-#projetos {
-  width: 100%;
-  margin: 20px 0;
+  padding: 20px;
+  color: white;
 }
 
 /* Estilo do logo */
-#logo {
-  width: 150px;
-  margin-bottom: 20px;
+.logo {
+  width: 200px;
+  margin-bottom: 40px;
 }
 
-/* Seção de Contato */
-#contato {
-  width: 100%;
+/* Estilo das seções */
+.sobre, .projetos {
   margin: 20px 0;
 }
 
-a {
-  text-decoration: none;
-  color: #007bff;
+/* Títulos das seções */
+.sobre h1, .projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
 }
 
-a:hover {
-  color: #0056b3;
+/* Texto das seções */
+.sobre p, .projetos p {
+  font-size: 1.2rem;
 }
