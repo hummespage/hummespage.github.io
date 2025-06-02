@@ -8,9 +8,9 @@ html, body {
   height: 100%;
   font-family: Arial, sans-serif;
   scroll-behavior: smooth;
+  background-color: black;
 }
 
-/* Cada seção ocupa toda a tela e tem fundo individual */
 .bloco {
   height: 100vh;
   width: 100%;
@@ -22,17 +22,19 @@ html, body {
   align-items: center;
   text-align: center;
   position: relative;
-  color: white;
   padding: 2rem;
+  color: white;
 }
 
-/* Fundos com background-image direto no CSS */
+/* Fundos com background-image via CSS */
 .bloco1 {
   background-image: url('assets/fundo_site_parte_1.png');
 }
+
 .bloco2 {
   background-image: url('assets/fundo_site_parte_2.png');
 }
+
 .bloco3 {
   background-image: url('assets/fundo_site_parte_3.png');
 }
@@ -42,6 +44,7 @@ html, body {
   padding: 2rem;
   border-radius: 12px;
   max-width: 800px;
+  z-index: 1;
 }
 
 .logo {
