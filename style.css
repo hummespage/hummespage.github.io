@@ -1,47 +1,42 @@
-* {
+/* Garante que o body tenha a altura completa da página */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* altura da tela */
+  background-color: #f4f4f4;
 }
 
-body {
-  background-color: black;
-  font-family: monospace;
-  color: white;
-  overflow-x: hidden;
-}
-
-.scroll-container {
-  position: relative;
-  width: 100vw;
-}
-
-.fundo-img {
-  width: 100vw;
-  display: block;
-}
-
-.conteudo-site {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 100px 20px;
-  max-width: 700px;
+/* Centralizando o conteúdo */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  z-index: 10;
+  width: 80%;
+  max-width: 1200px;
 }
 
-.logo {
+/* Ajustes para a seção Sobre mim */
+#sobre-mim {
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto 40px;
-  display: block;
+  margin: 20px 0;
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 20px;
-  margin-bottom: 40px;
-  border-radius: 10px;
+/* Ajustes para a seção Projetos */
+#projetos {
+  width: 100%;
+  margin: 20px 0;
 }
+
+/* Estilo do logo */
+#logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
