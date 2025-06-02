@@ -27,11 +27,13 @@ body {
 .conteudo-site {
   position: absolute;
   top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
   max-width: 700px;
-  margin: 0 auto;
   padding: 100px 20px;
   z-index: 10;
+  text-align: center;
   text-shadow: 1px 1px 2px black;
 }
 
