@@ -11,6 +11,12 @@ body {
   overflow: hidden; /* Impede rolagem, se necessário */
   flex-direction: column;
   text-align: center;
+  background-image: url('assets/fundo_site_parte_1.png'), 
+                    url('assets/fundo_site_parte_2.png'), 
+                    url('assets/fundo_site_parte_3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* Contêiner principal para o conteúdo */
@@ -22,13 +28,7 @@ body {
 
 /* Estilo das imagens de fundo */
 .fundo-img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ajusta as imagens para cobrir a tela */
-  top: 0;
-  left: 0;
-  z-index: -1; /* Coloca as imagens no fundo */
+  display: none; /* As imagens de fundo agora serão tratadas via CSS, então removemos as imagens visíveis no HTML */
 }
 
 /* Estilo do conteúdo centralizado */
@@ -61,3 +61,4 @@ body {
 .sobre p, .projetos p {
   font-size: 1.2rem;
 }
+
