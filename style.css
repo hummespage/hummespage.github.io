@@ -1,36 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
   font-family: monospace;
-  overflow-x: hidden;
+  background-color: black;
 }
 
 .scroll-container {
   position: relative;
   width: 100%;
-  overflow-y: auto;
-}
-
-.fundo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .fundo-img {
-  width: 100%;
+  width: 100vw;
+  height: auto;
   display: block;
 }
 
 .conteudo-site {
-  position: relative;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   max-width: 700px;
   margin: 0 auto;
   padding: 100px 20px;
+  z-index: 1;
   color: white;
   text-shadow: 1px 1px 2px black;
 }
@@ -38,13 +39,13 @@ body {
 .logo {
   width: 100%;
   max-width: 400px;
-  display: block;
   margin: 40px auto;
+  display: block;
 }
 
 section {
   margin-bottom: 60px;
-  background: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 20px;
   border-radius: 10px;
 }
