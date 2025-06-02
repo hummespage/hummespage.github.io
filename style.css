@@ -6,16 +6,16 @@ body {
   background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  height: 100%; /* altura da tela */
+  height: 100%;
   overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
 }
 
-/* Cada imagem ocupa 100vh, ou seja, uma tela inteira */
+/* Estilo para cada imagem de fundo, uma embaixo da outra */
 .fundo-img {
   width: 100%;
   height: 100vh; /* Cada imagem ocupa a altura da tela */
-  object-fit: cover; /* Garantir que a imagem cubra a tela sem distorção */
+  object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
   position: relative;
   z-index: -1; /* Coloca as imagens atrás do conteúdo */
 }
@@ -33,7 +33,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 20px; /* Espaço para o conteúdo */
+  margin-top: 100px; /* Espaço para o conteúdo */
 }
 
 /* Estilo do logo */
