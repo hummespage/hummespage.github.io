@@ -1,67 +1,16 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>hummes page</title>
+  <title>Hummes Page</title>
   <link rel="stylesheet" href="style.css" />
-  <script src="script.js" defer></script>
 </head>
 <body>
-  <div id="game-wrapper">
-
-    <!-- Logo -->
-    <header class="topo">
-      <img src="assets/hummes-logo.png"
-           alt="Logo Hummes Page"
-           width="500"
-           style="display: block; margin: 30px auto;">
-    </header>
-
-    <!-- Seção Sobre Mim -->
-    <section id="sobre-mim" class="bloco">
-      <h2>Sobre Mim</h2>
-      <p>
-        Aqui entra a descrição sobre você.<br/>
-        Nome: <strong>hummespage</strong><br/>
-        Ano de nascimento: <strong>1985</strong>
-      </p>
-    </section>
-
-    <!-- Seção Projetos -->
-    <section id="projetos" class="bloco">
-      <h2>Projetos</h2>
-      <p>Em breve, seus jogos e sistemas Python aparecerão aqui!</p>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="rodape">
-      <p>© hummespage - 2025</p>
-    </footer>
-
+  <div class="scroll-container">
+    <img src="assets/fundo_site_parte_1.png" alt="Fundo parte 1" class="fundo-img">
+    <img src="assets/fundo_site_parte_2.png" alt="Fundo parte 2" class="fundo-img">
+    <img src="assets/fundo_site_parte_3.png" alt="Fundo parte 3" class="fundo-img">
   </div>
-
-  <!-- Música de fundo (arquivo hospedado na pasta /assets) -->
-  <audio id="musica">
-    <source src="assets/8-bit-menu.mp3" type="audio/mpeg">
-    Seu navegador não suporta áudio.
-  </audio>
-
-  <!-- Botão para ativar/desativar música -->
-  <button onclick="toggleMusica()" style="
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 10px 15px;
-    font-family: monospace;
-    font-size: 12px;
-    background: #000;
-    color: #fff;
-    border: 2px solid #fff;
-    cursor: pointer;
-    z-index: 1000;
-  ">
-    🎵 Música ON/OFF
-  </button>
 </body>
 </html>
