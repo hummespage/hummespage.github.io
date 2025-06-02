@@ -1,52 +1,72 @@
-* {
-  box-sizing: border-box;
+/* Garante que o body tenha a altura completa da página */
+body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: black;
-  font-family: monospace;
-  color: white;
-  overflow-x: hidden;
-}
-
-.scroll-container {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative;
-}
-
-.fundo-img {
-  width: 100vw;
-  height: auto;
-  display: block;
-}
-
-.conteudo-site {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
-  max-width: 700px;
-  padding: 100px 20px;
-  z-index: 10;
+  height: 100%;
+  overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
-  text-shadow: 1px 1px 2px black;
 }
 
-.logo {
+/* Estilo para as imagens de fundo */
+.fundo-img {
   width: 100%;
-  max-width: 400px;
-  margin: 0 auto 40px;
-  display: block;
+  height: 150vh; /* Cada imagem ocupa 150% da altura da tela */
+  object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
+  position: relative;
+  z-index: -1; /* Coloca as imagens atrás do conteúdo */
 }
 
-section {
-  background-color: rgba(0, 0, 0, 0.6);
+/* Estilo da sequência de imagens no fundo (imagem 1, imagem 2 repetida 3 vezes e imagem 3) */
+body {
+  background-image: 
+    url('assets/fundo_site_parte_1.png'), 
+    url('assets/fundo_site_parte_2.png'), 
+    url('assets/fundo_site_parte_2.png'), /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_2.png'), /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_3.png'); /* Imagem 3 */
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+}
+
+/* Estilo do conteúdo da página */
+.scroll-container {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique acima das imagens */
+}
+
+/* Estilo do conteúdo centralizado */
+.conteudo-site {
+  position: relative;
+  z-index: 1; /* Garante que o conteúdo fique acima das imagens */
+  max-width: 1200px;
   padding: 20px;
+  color: white;
+  margin-top: 100px; /* Espaço para o conteúdo */
+}
+
+/* Estilo do logo */
+.logo {
+  width: 200px;
   margin-bottom: 40px;
-  border-radius: 10px;
+}
+
+/* Estilo das seções */
+.sobre, .projetos {
+  margin: 20px 0;
+}
+
+/* Títulos das seções */
+.sobre h1, .projetos h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+/* Texto das seções */
+.sobre p, .projetos p {
+  font-size: 1.2rem;
 }
