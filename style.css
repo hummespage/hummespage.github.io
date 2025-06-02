@@ -13,13 +13,11 @@ body {
   text-align: center;
 
   /* Ajusta as imagens de fundo */
-  background-image: url('assets/fundo_site_parte_1.png'), 
-                    url('assets/fundo_site_parte_2.png'), 
-                    url('assets/fundo_site_parte_3.png');
+  background-image: url('assets/fundo_site_parte_1.png'); /* Usando uma única imagem de fundo para evitar sobreposição */
   
-  background-size: cover; /* Garante que as imagens cubram toda a tela sem distorcer */
-  background-position: center; /* Centraliza as imagens */
-  background-repeat: no-repeat; /* Impede a repetição das imagens */
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Impede a repetição da imagem */
   background-attachment: fixed; /* Faz o fundo fixar na tela */
 }
 
@@ -60,4 +58,3 @@ body {
 .sobre p, .projetos p {
   font-size: 1.2rem;
 }
-
