@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -12,12 +12,15 @@ body {
 }
 
 .scroll-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
-  width: 100vw;
 }
 
 .fundo-img {
   width: 100vw;
+  height: auto;
   display: block;
 }
 
@@ -26,10 +29,12 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-  padding: 100px 20px;
+  width: 100%;
   max-width: 700px;
-  text-align: center;
+  padding: 100px 20px;
   z-index: 10;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
 
 .logo {
