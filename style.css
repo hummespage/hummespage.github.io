@@ -9,6 +9,7 @@ body {
   height: 100%;
   overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
+  position: relative;
 }
 
 /* Estilo para cada imagem de fundo, uma embaixo da outra */
@@ -16,7 +17,8 @@ body {
   width: 100%;
   height: 100vh; /* Cada imagem ocupa a altura da tela */
   object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
-  position: relative;
+  position: absolute; /* Absoluta para se alinhar com o conteúdo */
+  top: 0;
   z-index: -1; /* Coloca as imagens atrás do conteúdo */
 }
 
