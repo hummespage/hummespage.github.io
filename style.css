@@ -1,1 +1,41 @@
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.scroll-container {
+  width: 100%;
+}
+
+.fundo {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.conteudo {
+  background-color: rgba(0, 0, 0, 0.5); /* Destaque com transparência */
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+}
+
+.logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
