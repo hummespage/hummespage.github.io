@@ -1,79 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hummes Page</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+  <section class="bloco bloco1">
+    <div class="conteudo" style="margin-top: 80px;">
+      <img src="assets/hummes-logo.png" alt="Hummes Page Logo" class="logo"/>
+      <h1>Sobre Mim</h1>
+      <p>Olá! Meu nome é Samuel Hummes Schuler. Sou apaixonado por desenvolvimento de sistemas e programação desde 1998. Após experiências nas áreas de mecânica, arquitetura e empreendedorismo, decidi focar na tecnologia. Hoje busco oportunidades em desenvolvimento, com especialização em Python e visão ampla de soluções digitais.</p>
+    </div>
+  </section>
 
-html, body {
-  height: 100%;
-  font-family: 'Press Start 2P', cursive;
-  scroll-behavior: smooth;
-  background-color: black;
-  color: white;
-}
+  <section class="bloco bloco2">
+    <div class="conteudo" style="margin-top: 100px;">
+      <h2>Experiência Profissional</h2>
+      <p>Atuei como projetista na arquitetura entre 2009 e 2016, em empresas privadas e no setor público. Em seguida, empreendi como proprietário de bar e café até 2019, coordenando operações, equipes e estratégias de negócio. De 2020 em diante, foquei no estudo e prática de desenvolvimento de sistemas, buscando unir minha bagagem prática com tecnologia de ponta.</p>
+    </div>
+  </section>
 
-.bloco {
-  height: 100vh;
-  width: 100%;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: relative;
-  padding: 2rem;
-}
+  <section class="bloco bloco3">
+    <div class="conteudo" style="margin-top: 120px;">
+      <h2>Formação Acadêmica</h2>
+      <p>
+        <strong>Arquitetura e Urbanismo</strong> – UNISINOS (2020 – atual)<br/>
+        <strong>Tecnólogo em Mecânica Industrial</strong> – SINODAL (2006 – 2010)<br/>
+        <strong>Soldagem Industrial</strong> – SENAI (2010 – 2011)<br/>
+        <strong>Ensino Médio</strong> – Colégio Científico (2003)
+      </p>
 
-/* Fundos com background-image via CSS */
-.bloco1 {
-  background-image: url('assets/fundo_site_parte_1.png');
-}
+      <h2 style="margin-top: 2rem;">Cursos de Aperfeiçoamento</h2>
+      <ul>
+        <li>Python (FreeCodeCamp, Alura, Curso em Vídeo)</li>
+        <li>HTML, PHP, TypeScript, Ruby (Alura, Curso em Vídeo)</li>
+        <li>Java, C++, Rust, Kotlin, Swift (Udemy, edX)</li>
+        <li>AutoCAD, SketchUp, Arquitetura Hospitalar (UFRGS, Unisinos)</li>
+      </ul>
 
-.bloco2 {
-  background-image: url('assets/fundo_site_parte_2.png');
-}
+      <h2 style="margin-top: 2rem;">Plataformas e Tecnologias</h2>
+      <ul>
+        <li>SQL, MATLAB, Haskell, Scala</li>
+        <li>Experiência com lógica de programação, bancos de dados e ferramentas modernas de desenvolvimento</li>
+      </ul>
+    </div>
+  </section>
 
-.bloco3 {
-  background-image: url('assets/fundo_site_parte_3.png');
-}
+  <section class="bloco bloco3">
+    <div class="conteudo" style="margin-top: auto; margin-bottom: 60px;">
+      <h2>Contato</h2>
+      <p>Email: samuel.schuler2@gmail.com</p>
+      <p>Telefone: (51) 99744-5149</p>
+      <p>Garopaba, SC – Brasil</p>
+    </div>
+  </section>
 
-.conteudo {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 2rem;
-  border-radius: 12px;
-  max-width: 700px; /* ajustado para ser mais estreito */
-  width: 90%;
-  z-index: 1;
-  overflow-wrap: break-word;
-}
-
-.logo {
-  max-width: 180px;
-  margin-bottom: 1.5rem;
-}
-
-ul {
-  text-align: left;
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-  font-size: 10px;
-}
-
-ul li {
-  margin-bottom: 0.8rem;
-  line-height: 1.6;
-}
-
-h1, h2, h3 {
-  margin-bottom: 1rem;
-  font-size: 12px;
-}
-
-p {
-  font-size: 10px;
-  line-height: 1.6;
-}
+</body>
+</html>
