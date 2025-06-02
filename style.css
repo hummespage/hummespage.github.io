@@ -18,9 +18,9 @@ html, body {
 .bloco {
   min-height: 100vh;
   width: 100%;
-  background-size: 100% 100%; /* força a imagem a ocupar a seção inteira */
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: cover; /* Mantém proporção original e remove distorção */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -45,7 +45,7 @@ html, body {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 12px;
-  max-width: 700px;
+  max-width: 700px; /* Caixa mais estreita */
   width: 90%;
   z-index: 1;
   overflow-wrap: break-word;
