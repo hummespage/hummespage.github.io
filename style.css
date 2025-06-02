@@ -15,20 +15,20 @@ html, body {
   color: white;
 }
 
+/* SEÇÕES COM ALTURA AUTOMÁTICA */
 .bloco {
-  min-height: 100vh;
   width: 100%;
-  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover; /* Mantém proporção original e remove distorção */
+  background-position: top center;
+  background-size: contain;
+  padding: 100px 20px; /* espaço superior e inferior */
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  position: relative;
-  padding: 3rem 1rem;
 }
 
+/* IMAGENS DE FUNDO */
 .bloco1 {
   background-image: url('assets/fundo_site_parte_1.png');
 }
@@ -41,25 +41,29 @@ html, body {
   background-image: url('assets/fundo_site_parte_3.png');
 }
 
+/* CONTEÚDO COM TAMANHO AJUSTADO */
 .conteudo {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 2rem;
   border-radius: 12px;
-  max-width: 700px; /* Caixa mais estreita */
+  max-width: 700px;
   width: 90%;
   z-index: 1;
   overflow-wrap: break-word;
 }
 
+/* LOGO */
 .logo {
   max-width: 180px;
   margin-bottom: 1.5rem;
 }
 
+/* AJUSTE DE DISTÂNCIA ENTRE SEÇÕES */
 .formacao {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
+/* TEXTO E LISTAS */
 ul {
   text-align: left;
   margin-top: 1rem;
