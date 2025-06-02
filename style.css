@@ -9,6 +9,15 @@ body {
   height: 100%;
   overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
+  background-image: 
+    url('assets/fundo_site_parte_1.png'),  /* Imagem 1 */
+    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 */
+    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 repetida */
+    url('assets/fundo_site_parte_3.png');  /* Imagem 3 */
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: top center; /* Posiciona as imagens corretamente */
+  background-attachment: fixed; /* Faz o fundo fixar na tela */
 }
 
 /* Estilo para cada imagem de fundo, uma embaixo da outra */
@@ -33,7 +42,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 100px; /* Espaço para o conteúdo */
+  margin-top: 150px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
 }
 
 /* Estilo do logo */
@@ -56,17 +65,4 @@ body {
 /* Texto das seções */
 .sobre p, .projetos p {
   font-size: 1.2rem;
-}
-
-/* Sequência de imagens no CSS */
-body {
-  background-image: 
-    url('assets/fundo_site_parte_1.png'), /* Imagem 1 */
-    url('assets/fundo_site_parte_2.png'), /* Imagem 2 */
-    url('assets/fundo_site_parte_2.png'), /* Imagem 2 repetida */
-    url('assets/fundo_site_parte_2.png'), /* Imagem 2 repetida */
-    url('assets/fundo_site_parte_3.png'); /* Imagem 3 */
-  background-size: cover; /* Garante que a imagem cubra toda a tela */
-  background-position: top center; /* Posiciona as imagens corretamente */
-  background-attachment: fixed; /* Faz o fundo fixar na tela */
 }
