@@ -22,15 +22,6 @@ body {
   min-height: 100vh; /* Garante que a altura da página ocupe pelo menos a altura total da tela */
 }
 
-/* Estilo para as imagens de fundo, para que elas fiquem atrás do conteúdo */
-.fundo-img {
-  width: 100%;
-  height: 100vh; /* Cada imagem ocupa a altura da tela */
-  object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
-  position: relative;
-  z-index: -1; /* Coloca as imagens atrás do conteúdo */
-}
-
 /* Estilo do conteúdo da página */
 .scroll-container {
   position: relative;
@@ -44,7 +35,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 150px; /* Espaço para o conteúdo */
+  margin-top: 50px; /* Espaço para o conteúdo (ajustado para não ficar colado nas imagens) */
 }
 
 /* Estilo do logotipo */
@@ -79,7 +70,22 @@ body {
   line-height: 1.6; /* Garante melhor leitura entre as linhas */
 }
 
-/* Para melhorar a visualização na barra de rolagem */
+/* Imagens de fundo no CSS */
+body {
+  background-image: 
+    url('assets/fundo_site_parte_1.png'),
+    url('assets/fundo_site_parte_2.png'),
+    url('assets/fundo_site_parte_2.png'), /* Repetindo a imagem 2 */
+    url('assets/fundo_site_parte_2.png'), /* Repetindo a imagem 2 */
+    url('assets/fundo_site_parte_3.png'); /* Imagem 3 */
+  background-size: cover; /* Garante que a imagem cubra toda a tela */
+  background-position: top center; /* Posiciona as imagens corretamente */
+  background-attachment: scroll; /* Ajusta a rolagem das imagens */
+  height: auto;
+  min-height: 100vh; /* Garante que a altura da página ocupe pelo menos a altura total da tela */
+}
+
+/* Barra de rolagem */
 body::-webkit-scrollbar {
   width: 10px;
 }
