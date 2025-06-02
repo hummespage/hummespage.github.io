@@ -1,49 +1,47 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hummes Page</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <div class="scroll-container">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    <section class="fundo fundo1">
-      <div class="conteudo">
-        <img src="assets/hummes-logo.png" alt="Logo Hummes" class="logo" />
-        <h1>Sobre Mim</h1>
-        <p>Olá! Meu nome é Samuel Hummes Schuler, nasci em 1986. Este é meu portfólio com projetos em Python e desenvolvimento de jogos.</p>
-      </div>
-    </section>
+body, html {
+  width: 100%;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
 
-    <section class="fundo fundo2">
-      <div class="conteudo">
-        <h2>Projetos</h2>
-        <p>Aqui você poderá acessar meus jogos, animações e códigos criativos criados em Python.</p>
-      </div>
-    </section>
+.bloco {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-    <section class="fundo fundo2">
-      <div class="conteudo">
-        <h2>Mais Conteúdo</h2>
-        <p>Em breve novidades, incluindo tutoriais, ideias e novos projetos criativos.</p>
-      </div>
-    </section>
+.fundo-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que a imagem preencha o fundo sem cortar */
+  z-index: -1;
+}
 
-    <section class="fundo fundo2">
-      <div class="conteudo">
-        <h2>Contato</h2>
-        <p>Me siga nas redes sociais ou envie um e-mail com sugestões e ideias!</p>
-      </div>
-    </section>
+.conteudo {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 800px;
+  margin: 0 auto;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 12px;
+}
 
-    <section class="fundo fundo3">
-      <div class="conteudo">
-        <p>Obrigado por visitar! Hummes Page © 2025</p>
-      </div>
-    </section>
-
-  </div>
-</body>
-</html>
+.logo {
+  max-width: 200px;
+  margin-bottom: 1rem;
+}
