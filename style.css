@@ -1,7 +1,7 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -13,31 +13,29 @@ body {
 
 .scroll-container {
   position: relative;
+  width: 100vw;
 }
 
 .fundo-img {
   width: 100vw;
-  height: auto;
   display: block;
 }
 
 .conteudo-site {
   position: absolute;
   top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 100px 20px;
-  z-index: 10;
+  max-width: 700px;
   text-align: center;
+  z-index: 10;
 }
 
 .logo {
   width: 100%;
   max-width: 400px;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   display: block;
 }
 
@@ -46,6 +44,4 @@ section {
   padding: 20px;
   margin-bottom: 40px;
   border-radius: 10px;
-  width: 100%;
-  max-width: 700px;
 }
