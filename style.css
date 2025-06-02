@@ -9,6 +9,10 @@ body {
   height: 100%;
   overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
+}
+
+/* Estilo para as imagens de fundo */
+body {
   background-image: 
     url('assets/fundo_site_parte_1.png'),  /* Imagem 1 */
     url('assets/fundo_site_parte_2.png'),  /* Imagem 2 */
@@ -17,7 +21,8 @@ body {
     url('assets/fundo_site_parte_3.png');  /* Imagem 3 */
   background-size: cover; /* Garante que a imagem cubra toda a tela */
   background-position: top center; /* Posiciona as imagens corretamente */
-  background-attachment: fixed; /* Faz o fundo fixar na tela */
+  background-attachment: scroll; /* Desabilita o efeito "fixed" para evitar o problema do texto sendo empurrado para baixo */
+  height: auto;
 }
 
 /* Estilo para cada imagem de fundo, uma embaixo da outra */
@@ -42,7 +47,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 150px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
+  margin-top: 50px; /* Espaço para o conteúdo (ajustado para não ficar colado na imagem) */
 }
 
 /* Estilo do logo */
