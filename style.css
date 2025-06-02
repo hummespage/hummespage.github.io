@@ -9,18 +9,23 @@ body {
   height: 100%;
   overflow-y: auto; /* Permite rolagem vertical */
   text-align: center;
-  background-image: 
-    url('assets/fundo_site_parte_1.png'),  /* Imagem 1 */
-    url('assets/fundo_site_parte_2.png'),  /* Imagem 2 */
-    url('assets/fundo_site_parte_3.png');  /* Imagem 3 */
-  background-size: cover; /* Garante que as imagens cubram a tela */
-  background-position: top center; /* Posiciona as imagens corretamente */
-  background-attachment: scroll; /* Ajusta a rolagem das imagens */
-  height: auto;
-  min-height: 100vh; /* Garante que a altura da página ocupe pelo menos a altura total da tela */
 }
 
-/* Estilo para o conteúdo da página */
+/* Container para as imagens de fundo */
+.fundo-container {
+  position: relative;
+  z-index: -1; /* Garante que as imagens fiquem atrás do conteúdo */
+}
+
+/* Estilo para as imagens de fundo */
+.fundo-img {
+  width: 100%;
+  height: 100vh; /* Cada imagem ocupa a altura da tela */
+  object-fit: cover; /* Garante que a imagem cubra a tela sem distorção */
+  position: relative;
+}
+
+/* Estilo do conteúdo da página */
 .scroll-container {
   position: relative;
   z-index: 1; /* Garante que o conteúdo fique acima das imagens */
@@ -33,7 +38,7 @@ body {
   max-width: 1200px;
   padding: 20px;
   color: white;
-  margin-top: 50px; /* Espaço para o conteúdo (ajustado para não ficar colado nas imagens) */
+  margin-top: 100px; /* Espaço para o conteúdo (ajustado para não ficar colado nas imagens) */
 }
 
 /* Estilo do logotipo */
@@ -68,7 +73,7 @@ body {
   line-height: 1.6; /* Garante melhor leitura entre as linhas */
 }
 
-/* Para melhorar a visualização na barra de rolagem */
+/* Barra de rolagem */
 body::-webkit-scrollbar {
   width: 10px;
 }
