@@ -1,64 +1,79 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hummes Page</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-  <!-- Bloco 1 - Introdução -->
-  <div class="bloco bloco1">
-    <div class="conteudo">
-      <img src="assets/hummes-logo.png" alt="Hummes Page Logo" class="logo" />
-      <h1>Sobre Mim</h1>
-      <p>Olá! Meu nome é Samuel Hummes Schuler. Desde 1998 sou apaixonado por programação e tecnologia. Ao longo da minha vida profissional, atuei como projetista de arquitetura, administrador de bar e café, e atualmente estou focado em desenvolvimento de sistemas com ênfase em Python. Sou criativo, autodidata, e busco crescer na área de tecnologia unindo experiência, lógica e visão estratégica.</p>
-    </div>
-  </div>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- Bloco 2 - Experiência Profissional -->
-  <div class="bloco bloco2">
-    <div class="conteudo" style="margin-top: 60px;">
-      <h2>Experiência Profissional</h2>
-      <p><strong>Administrador – Semmuh, Garopaba (2016–2019)</strong><br>Gestão financeira, relatórios estratégicos, controle de despesas e análise de lucratividade.</p>
-      <p><strong>Proprietário – Casa da Esquina, Montenegro (2010–2016)</strong><br>Gestão completa de bar/café, controle de equipe, atendimento ao cliente, estoque, eventos e marketing.</p>
-      <p><strong>Projetista de Arquitetura – Schuler Eng. Cia., Decora por Hora, Prefeitura de Montenegro (2009–2016)</strong><br>Desenvolvimento de projetos técnicos, plantas, obras públicas e privadas, modelagem e AutoCAD.</p>
-    </div>
-  </div>
+html, body {
+  height: 100%;
+  font-family: 'Press Start 2P', cursive;
+  scroll-behavior: smooth;
+  background-color: black;
+  color: white;
+}
 
-  <!-- Bloco 3 - Formação Acadêmica e Cursos -->
-  <div class="bloco bloco3">
-    <div class="conteudo" style="margin-top: 60px;">
-      <h2>Formação Acadêmica</h2>
-      <p><strong>Arquitetura e Urbanismo</strong> – UNISINOS, 2020–Atual</p>
-      <p><strong>Tecnólogo em Mecânica Industrial</strong> – SINODAL, 2006–2010</p>
-      <p><strong>Soldagem Industrial</strong> – SENAI, 2010–2011</p>
-      <p><strong>Ensino Médio</strong> – Colégio Científico, 2003</p>
+.bloco {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+}
 
-      <h2 style="margin-top: 2rem;">Cursos de Aperfeiçoamento</h2>
-      <ul>
-        <li>Python (240h) – FreeCodeCamp, 2022</li>
-        <li>Rust/DevOps (40h) – Alura, 2021</li>
-        <li>PHP, TypeScript, Ruby – Alura, 2020</li>
-        <li>Python (Curso em Vídeo, Alura) – 2016 a 2018</li>
-        <li>Java (120h) – Udemy, 2018</li>
-        <li>C++ (120h) – edX, 2019</li>
-        <li>Kotlin/Swift – edX, 2020</li>
-        <li>AutoCAD, SketchUp, Renderização 3D – UFRGS/Unisinos</li>
-      </ul>
+/* Fundos com background-image via CSS */
+.bloco1 {
+  background-image: url('assets/fundo_site_parte_1.png');
+}
 
-      <h2 style="margin-top: 2rem;">Plataformas e Linguagens</h2>
-      <ul>
-        <li>SQL • MATLAB • Haskell • Scala</li>
-      </ul>
-    </div>
-  </div>
+.bloco2 {
+  background-image: url('assets/fundo_site_parte_2.png');
+}
 
-  <!-- Rodapé com Contato -->
-  <footer style="padding: 2rem; background-color: #000; text-align: center;">
-    <p style="font-size: 10px;">Entre em contato: <br>📧 samuel.schuler2@gmail.com<br>📞 +55 51 99744-5149</p>
-  </footer>
+.bloco3 {
+  background-image: url('assets/fundo_site_parte_3.png');
+}
 
-</body>
-</html>
+.conteudo {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 700px; /* ajustado para ser mais estreito */
+  width: 90%;
+  z-index: 1;
+  overflow-wrap: break-word;
+}
+
+.logo {
+  max-width: 180px;
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  text-align: left;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  font-size: 10px;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+  font-size: 12px;
+}
+
+p {
+  font-size: 10px;
+  line-height: 1.6;
+}
