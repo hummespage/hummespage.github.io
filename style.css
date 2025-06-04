@@ -5,10 +5,11 @@
 }
 
 html, body {
-  height: 100%;
-  font-family: Arial, sans-serif;
+  height: auto;
+  font-family: 'Press Start 2P', monospace;
   scroll-behavior: smooth;
   background-color: black;
+  overflow-x: hidden;
 }
 
 /* Blocos com espaçamento controlado */
@@ -37,13 +38,39 @@ html, body {
   background-image: url('assets/fundo_site_parte_3.png');
 }
 
+/* Fundo dividido em 3 partes para experiencia.html */
+.bg-section {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+}
+
+.bg-topo {
+  background-image: url('assets/fundo_dragao_topo.png');
+}
+
+.bg-meio {
+  background-image: url('assets/fundo_dragao_meio.png');
+}
+
+.bg-baixo {
+  background-image: url('assets/fundo_dragao_baixo.png');
+}
+
+/* Conteúdo geral */
 .conteudo {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 2rem;
-  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  margin: -210vh auto 0 auto;
   max-width: 900px;
+  border-radius: 12px;
+  position: relative;
+  z-index: 2;
+  min-height: 260vh;
+  overflow: hidden;
   color: white;
-  margin-top: 2rem;
 }
 
 .logo {
@@ -60,6 +87,7 @@ h1, h2, h3 {
 p, li {
   margin-top: 0.5rem;
   line-height: 1.6;
+  font-size: 12px;
 }
 
 ul {
@@ -67,12 +95,7 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-/* Estilo específico para a página experiencia.html */
+/* Remove estilo antigo de fundo da experiencia.html */
 body.experiencia {
-  background-image: url('assets/fundo-experiencia.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  color: white;
+  background: none;
 }
