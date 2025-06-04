@@ -6,10 +6,70 @@
   <title>Experiência Profissional</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
-</head>
-<body class="experiencia">
+  <style>
+    body {
+      font-family: 'Press Start 2P', monospace;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      overflow-x: hidden;
+    }
 
-  <!-- Fundos em 3 blocos -->
+    .bg-section {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%;
+    }
+
+    .bg-topo {
+      background-image: url('assets/fundo_dragao_topo.png');
+    }
+
+    .bg-meio {
+      background-image: url('assets/fundo_dragao_meio.png');
+    }
+
+    .bg-baixo {
+      background-image: url('assets/fundo_dragao_baixo.png');
+    }
+
+    .conteudo {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 40px;
+      margin: -210vh auto 0 auto;
+      max-width: 900px;
+      border-radius: 12px;
+      position: relative;
+      z-index: 2;
+      min-height: 260vh;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: 20px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      font-size: 14px;
+      margin-top: 30px;
+      color: #ffd700;
+    }
+
+    p {
+      font-size: 12px;
+      margin-top: 10px;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Fundos -->
   <div class="bg-section bg-topo"></div>
   <div class="bg-section bg-meio"></div>
   <div class="bg-section bg-baixo"></div>
