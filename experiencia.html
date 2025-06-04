@@ -5,46 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Experiência Profissional</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
   <style>
     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Press Start 2P', monospace;
+      background-color: black;
+      color: white;
+    }
+
+    .bg-container {
+      width: 100%;
+    }
+
+    .bg {
       background-image: url('/assets/fundo-experiencia.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-color: black;
-      color: white;
-      font-family: Arial, sans-serif;
+      height: 100vh;
     }
 
     .conteudo {
       padding: 40px;
       background-color: rgba(0, 0, 0, 0.7);
-      margin: 100px auto;
+      margin: -250vh auto 100px auto; /* sobe para o topo das 3 imagens */
       max-width: 900px;
       border-radius: 12px;
+      position: relative;
+      z-index: 1;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 20px;
       text-align: center;
       margin-bottom: 30px;
     }
 
     h2 {
-      font-size: 22px;
+      font-size: 14px;
       margin-top: 30px;
       color: #ffd700;
     }
 
     p {
-      font-size: 16px;
+      font-size: 12px;
       margin-top: 10px;
-      line-height: 1.6;
+      line-height: 1.8;
     }
   </style>
 </head>
 <body>
+  <div class="bg-container">
+    <div class="bg"></div>
+    <div class="bg"></div>
+    <div class="bg"></div>
+  </div>
+
   <div class="conteudo">
     <h1>Experiência Profissional</h1>
 
