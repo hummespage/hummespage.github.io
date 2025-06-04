@@ -15,22 +15,30 @@
       color: white;
     }
 
-    .bg-container {
-      width: 100%;
-    }
-
-    .bg {
-      background-image: url('/assets/fundo-experiencia.png');
+    .bg-section {
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       height: 100vh;
+      width: 100%;
+    }
+
+    .bg-topo {
+      background-image: url('assets/fundo_dragao_topo.png');
+    }
+
+    .bg-meio {
+      background-image: url('assets/fundo_dragao_meio.png');
+    }
+
+    .bg-baixo {
+      background-image: url('assets/fundo_dragao_baixo.png');
     }
 
     .conteudo {
+      background-color: rgba(0, 0, 0, 0.75);
       padding: 40px;
-      background-color: rgba(0, 0, 0, 0.7);
-      margin: -250vh auto 100px auto; /* sobe para o topo das 3 imagens */
+      margin: -150vh auto 100px auto;
       max-width: 900px;
       border-radius: 12px;
       position: relative;
@@ -57,11 +65,10 @@
   </style>
 </head>
 <body>
-  <div class="bg-container">
-    <div class="bg"></div>
-    <div class="bg"></div>
-    <div class="bg"></div>
-  </div>
+
+  <div class="bg-section bg-topo"></div>
+  <div class="bg-section bg-meio"></div>
+  <div class="bg-section bg-baixo"></div>
 
   <div class="conteudo">
     <h1>Experiência Profissional</h1>
@@ -92,5 +99,6 @@
     <h2>Armarius Design - Projetista de Móveis<br><small>Montenegro, RS (Julho 2009 – Julho 2011)</small></h2>
     <p>Criação de projetos 3D de móveis planejados, gerenciando vendas e acompanhando o processo de fabricação.</p>
   </div>
+
 </body>
 </html>
