@@ -1,27 +1,25 @@
-# Hummes Portfolio (GitHub Pages)
+# Hummes Portfolio
 
-Personal developer portfolio focused on:
+Personal developer portfolio focused on product thinking and clean UI.
 
-- Web Development
-- Automation & Conversational Bots
-- SaaS MVP Prototyping
-- Clean & Functional UI
-
-🔗 Live website: https://hummespage.github.io  
+🔗 Live: https://hummespage.github.io  
 🔗 LinkedIn: https://linkedin.com/in/samuelhummes  
 
 ---
 
-## About this repository
+## Preview
 
-This repository hosts my static portfolio website.
-
-Stack:
-- HTML
-- CSS
-- JavaScript
-- GitHub Pages (static deployment)
+![Portfolio Preview](./assets/portfolio-preview.png)
 
 ---
 
-Focused on simplicity, clarity and product-oriented thinking.
+## About
+
+This repository hosts my static portfolio website built with:
+
+- HTML
+- CSS
+- JavaScript
+- GitHub Pages
+
+Focused on simplicity, UX clarity and product-oriented execution.
