@@ -9,7 +9,7 @@ Personal developer portfolio focused on product thinking and clean UI.
 
 ## Preview
 
-![Portfolio Preview](./assets/portfolio-preview.png)
+![Portfolio Preview](./portfolio-preview.png)
 
 ---
 
